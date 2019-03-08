@@ -76,6 +76,7 @@ alias rake="noglob rake"
 alias rg="rg --colors 'match:style:nobold' --colors 'path:style:nobold'"
 alias be="noglob bundle exec"
 alias sha256="shasum -a 256"
+alias ...="cd .."
 
 # Platform-specific stuff
 if quiet_which brew
@@ -200,7 +201,7 @@ cd() {
   [ "$TERMINALAPP" ] && command -v set_terminal_app_pwd >/dev/null \
     && set_terminal_app_pwd
   pwd > "$HOME/.lastpwd"
-  ls
+  # ls
 }
 
 # Use ruby-prof to generate a call stack
