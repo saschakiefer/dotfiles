@@ -31,16 +31,30 @@ shopt -s cdspell
 [ -f /etc/profile.d/bash-completion ] && source /etc/profile.d/bash-completion
 [ -d "$HOMEBREW_PREFIX/etc/bash_completion.d" ] && source "$HOMEBREW_PREFIX/etc/bash_completion.d/*" >/dev/null
 
+# Git branch parser
+function parse_git_branch {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+  echo "("${ref#refs/heads/}")"
+}
+
 # Colorful prompt
+RED="\[\033[0;31m\]"
+YELLOW="\[\033[0;33m\]"
+GREEN="\[\033[0;32m\]"
+GREY="\[\033[0;37m\]"
+
 if [ "$USER" = "root" ]
 then
-  PS1='\[\033[01;35m\]\h\[\033[01;34m\] \W #\[\033[00m\] '
+  PS1="$GREEN\u@\h \w $YELLOW\$(parse_git_branch)$GREY\$ "
 elif [ -n "${SSH_CONNECTION}" ]
 then
-  PS1='\[\033[01;36m\]\h\[\033[01;34m\] \W #\[\033[00m\] '
+  PS1="$GREEN\u@\h \w $YELLOW\$(parse_git_branch)$GREY\$ "
 else
-  PS1='\[\033[01;32m\]\h\[\033[01;34m\] \W #\[\033[00m\] '
+  PS1="$GREEN\u@\h \w $YELLOW\$(parse_git_branch)$GREY\$ "
 fi
+
+# Aliases
+alias ...="cd .."
 
 # only set key bindings on interactive shell
 if [ -n "$INTERACTIVE_BASH" ]
