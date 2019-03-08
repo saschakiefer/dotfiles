@@ -22,10 +22,42 @@ cask "1password-cli"
 cask "visual-studio-code"
 brew 'zsh'
 brew 'zsh-syntax-highlighting'
+brew 'spotify'
+brew 'bartender'
+brew 'cliqz'
+brew 'cyberduck'
+brew 'devonthink-pro'
+brew 'dropbox'
+brew 'evernote'
+brew 'firefox'
+brew 'google-chrome'
+brew 'little-snitch'
+brew 'scrivener'
+brew 'typinator'
 
-mas "1Password 7", id: 1333542190
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Slack", id: 803453959
-mas "Xcode", id: 497799835
+
+mas "Garmin BaseCamp", id: 411052274 
+mas "Things3", id: 904280696 
+mas "Garmin WebUpdater", id: 477318609 
+mas "Evernote", id: 406056744 
+mas "409183694 Keynote", id: 
+mas "Kindle", id: 405399194 
+mas "iA Writer", id: 775737590 
+mas "Magnet", id: 441258766 
+mas "GhosteryLite", id: 1436953057 
+mas "1Password 7", id: 1333542190 
+mas "GarageBand", id: 682658836 
+mas "Amphetamine", id: 937984704 
+mas "The Unarchiver", id: 425424353 
+mas "Be Focused Pro", id: 961632517 
+mas "Numbers", id: 409203825 
+mas "Xcode", id: 497799835 
+mas "WhatsApp", id: 1147396723
+mas "Pages", id: 409201541 
+mas "AdBlock", id: 1402042596 
+mas "Marked", id: 448925439 
+mas "iMovie", id: 408981434 
+mas "Logic Pro X", id: 634148309 
+mas "StarMoney", id: 1237596145 
+mas "AudioBookBinder", id: 413969927 
+mas "Slack", id: 803453959 
