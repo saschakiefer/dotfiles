@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+# Link CLIQZ Browser Settings
+ln -sfv ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Settings/Cliqz/y43yam2o.default ~/Library/Application\ Support/CLIQZ/Profiles/y43yam2o.default
+
+# Devon Think Templates
+ln -sfv ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Settings/DEVONThink/_My\ Templates ~/Library/Application\ Support/DEVONthink\ Pro\ 2/Templates.noindex/_My\ Templates
