@@ -8,33 +8,32 @@ tap "homebrew/formula-analytics"
 tap "homebrew/services"
 tap "homebrew/test-bot"
 
-cask "java8"
-brew "openssl"
-brew "git"
-brew "git-imerge"
-brew "git-when-merged"
-brew "mas"
-brew "pkg-config"
-brew "node-build"
-brew "nodenv"
-brew "wget"
-cask "1password-cli"
-cask "visual-studio-code"
-brew 'zsh'
-brew 'zsh-syntax-highlighting'
-cask 'spotify'
-cask 'bartender'
-cask 'cliqz'
-cask 'cyberduck'
-cask 'devonthink-pro'
-cask 'dropbox'
-cask 'evernote'
-cask 'firefox'
-cask 'google-chrome'
-cask 'little-snitch'
-cask 'scrivener'
-cask 'typinator'
-
+brew  "git-imerge"
+brew  "git-when-merged"
+brew  "git"
+brew  "mas"
+brew  "node-build"
+brew  "nodenv"
+brew  "openssl"
+brew  "pkg-config"
+brew  "wget"
+brew  "zsh-syntax-highlighting"
+brew  "zsh"
+cask  "1password-cli"
+cask  "bartender"
+cask  "cliqz"
+cask  "cyberduck"
+cask  "devonthink-pro"
+cask  "dropbox"
+cask  "evernote"
+cask  "firefox"
+cask  "google-chrome"
+cask  "java8"
+cask  "little-snitch"
+cask  "scrivener"
+# cask  "spotify" # Slow like hell. Better download directly
+cask  "typinator"
+cask  "visual-studio-code"
 
 mas "Garmin BaseCamp", id: 411052274 
 mas "Things3", id: 904280696 
