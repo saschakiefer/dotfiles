@@ -33,6 +33,7 @@ cask "java8"
 cask "little-snitch"
 cask "scrivener"
 # cask  "spotify" # Slow like hell. Better download directly
+cask "tor-browser"
 cask "typinator"
 cask "visual-studio-code"
 
