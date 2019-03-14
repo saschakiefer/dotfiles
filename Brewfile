@@ -8,7 +8,7 @@ tap "homebrew/formula-analytics"
 tap "homebrew/services"
 tap "homebrew/test-bot"
 
-brew cloudfoundry/tap/cf-cli
+brew "cf-cli"
 brew "git-imerge"
 brew "git-when-merged"
 brew "git"
