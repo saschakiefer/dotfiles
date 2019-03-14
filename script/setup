@@ -55,6 +55,11 @@ then
   script/install-settings
   if [ "$SHELL" != "/bin/zsh" ]
   then
-    chsh -s /bin/zsh sascha
+    if [ -e ~/.isWorkMac ]
+    then
+      chsh -s /bin/zsh d044813
+    else
+      chsh -s /bin/zsh sascha
+    fi
   fi
 fi
