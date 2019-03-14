@@ -51,3 +51,19 @@ fi
 export HOMEBREW_GITHUB_TOKEN="$GITHUB_TOKEN"
 export HUBOT_GITHUB_TOKEN="$GITHUB_TOKEN"
 export OCTOKIT_ACCESS_TOKEN="$GITHUB_TOKEN"
+
+# Set stuff for the work Mac
+if [ -e ~/.isWorkMac ]
+then
+    export all_proxy="http://proxy.wdf.sap.corp:8080"
+    export http_proxy="http://proxy.wdf.sap.corp:8080"
+    export https_proxy="http://proxy.wdf.sap.corp:8080"
+    export no_proxy="localhost,127.0.0.0/8,*.local,*.sap.corp"
+    export ALL_PROXY="http://proxy.wdf.sap.corp:8080"
+    export HTTP_PROXY="http://proxy.wdf.sap.corp:8080"
+    export HTTPS_PROXY="http://proxy.wdf.sap.corp:8080"
+    export NO_PROXY="localhost,127.0.0.0/8,*.local,*.sap.corp"
+else
+
+fi
+
