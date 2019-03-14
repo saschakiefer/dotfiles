@@ -52,7 +52,7 @@ mas "GarageBand", id: 682658836
 mas "Amphetamine", id: 937984704 
 mas "The Unarchiver", id: 425424353 
 mas "Numbers", id: 409203825 
-mas "Xcode", id: 497799835 
+# ^xmas "Xcode", id: 497799835 
 mas "WhatsApp", id: 1147396723
 mas "Pages", id: 409201541 
 mas "AdBlock", id: 1402042596 
