@@ -63,7 +63,4 @@ then
     export HTTP_PROXY="http://proxy.wdf.sap.corp:8080"
     export HTTPS_PROXY="http://proxy.wdf.sap.corp:8080"
     export NO_PROXY="localhost,127.0.0.0/8,*.local,*.sap.corp"
-else
-
 fi
-
