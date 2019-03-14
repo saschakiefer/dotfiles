@@ -7,6 +7,7 @@ tap "homebrew/core"
 tap "homebrew/formula-analytics"
 tap "homebrew/services"
 tap "homebrew/test-bot"
+tap "cloudfoundry"
 
 brew "cf-cli"
 brew "git-imerge"
