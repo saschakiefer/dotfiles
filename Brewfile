@@ -54,8 +54,7 @@ mas "Numbers", id: 409203825
 mas "WhatsApp", id: 1147396723
 mas "Pages", id: 409201541 
 mas "AdBlock", id: 1402042596 
-mas "Marked", id: 448925439 
-ms  "Marked 2", id: 890031187
+mas "Marked 2", id: 890031187
 mas "iMovie", id: 408981434 
 mas "Logic Pro X", id: 634148309 
 mas "StarMoney", id: 1237596145 
