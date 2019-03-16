@@ -33,7 +33,6 @@ cask "google-chrome"
 cask "java8"
 cask "little-snitch"
 cask "scrivener"
-# cask  "spotify" # Slow like hell. Better download directly
 cask "tor-browser"
 cask "typinator"
 cask "visual-studio-code"
@@ -52,7 +51,6 @@ mas "GarageBand", id: 682658836
 mas "Amphetamine", id: 937984704 
 mas "The Unarchiver", id: 425424353 
 mas "Numbers", id: 409203825 
-# ^xmas "Xcode", id: 497799835 
 mas "WhatsApp", id: 1147396723
 mas "Pages", id: 409201541 
 mas "AdBlock", id: 1402042596 
@@ -62,3 +60,4 @@ mas "Logic Pro X", id: 634148309
 mas "StarMoney", id: 1237596145 
 mas "AudioBookBinder", id: 413969927 
 mas "Slack", id: 803453959 
+mas "Agenda", id: 1287445660
