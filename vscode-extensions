@@ -1,5 +1,7 @@
 alefragnani.project-manager
 ban.spellright
+bierner.markdown-footnotes
+bierner.markdown-mermaid
 christian-kohler.npm-intellisense
 codezombiech.gitignore
 DavidAnson.vscode-markdownlint
@@ -9,6 +11,7 @@ donjayamanne.githistory
 DotJoshJohnson.xml
 eamodio.gitlens
 eg2.vscode-npm-script
+fcrespo82.markdown-table-formatter
 felipecaputo.git-project-manager
 fknop.vscode-npm
 formulahendry.auto-close-tag
@@ -16,7 +19,7 @@ GitHub.vscode-pull-request-github
 HookyQR.beautify
 joelday.docthis
 larshp.vscode-abap
-lonefy.vscode-JS-CSS-HTML-formatter
+legendmohe.markdown-index
 mcastany.saml-extension
 mikestead.dotenv
 mitchdenny.ecdc
@@ -24,13 +27,13 @@ mohsen1.prettify-json
 MS-CEINTL.vscode-language-pack-de
 ms-python.python
 ms-vscode.cpptools
-ms-vscode.Theme-MarkdownKit
 msjsdiag.debugger-for-chrome
 PeterJausovec.vscode-docker
 phr0s.bib
 rebornix.ruby
 streetsidesoftware.code-spell-checker
 techer.open-in-browser
+Tyriar.sort-lines
 waderyan.gitblame
 yzhang.markdown-all-in-one
 Zignd.html-css-class-completion

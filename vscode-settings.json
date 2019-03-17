@@ -1,25 +1,54 @@
 // Platzieren Sie Ihre Einstellungen in dieser Datei, um die Standardeinstellungen zu überschreiben.
 {
-    "editor.minimap.enabled": true,
+    "[markdown]": {
+        "editor.fontSize": 18,
+        "editor.minimap.enabled": false,
+        "editor.tabSize": 2
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [{
+            "scope": "string.quoted.other.footnote",
+            "settings": {
+                "foreground": "#4b4b4b",
+                "fontStyle": "italic"
+            }
+        }]
+    },
     "editor.formatOnSave": true,
-    "workbench.panel.location": "bottom",
-    "python.linting.enabledWithoutWorkspace": false,
-    "git.autofetch": true,
-    "workbench.startupEditor": "newUntitledFile",
+    "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
-    "window.zoomLevel": 0,
     "eslint.enable": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true,
         "suppressWelcomeNotice": true
     },
-    "markdown.extension.preview.autoShowPreviewToSide": false,
-    "markdown.extension.italic.indicator": "_",
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
     "gitlens.keymap": "chorded",
-    "gitlens.historyExplorer.enabled": true,
-    "jshint.enable": false,
+    "gitlens.currentLine.enabled": false,
     "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true
+    "gitlens.views.lineHistory.enabled": false,
+    "jshint.enable": false,
+    "markdown.extension.italic.indicator": "_",
+    "markdown.extension.preview.autoShowPreviewToSide": false,
+    "markdown.extension.showExplorer": true,
+    "markdown.extension.toc.githubCompatibility": true,
+    "markdown.extension.toc.updateOnSave": false,
+    "markdownlint.run": "onSave",
+    "spellright.documentTypes": [
+        "latex",
+        "markdown",
+        "plaintext"
+    ],
+    "spellright.language": [
+        "de",
+        "en"
+    ],
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "window.zoomLevel": 0,
+    "workbench.startupEditor": "newUntitledFile",
+    "zenMode.hideActivityBar": true,
+    "zenMode.hideLineNumbers": false,
 }
