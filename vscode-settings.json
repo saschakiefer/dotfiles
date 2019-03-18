@@ -35,6 +35,7 @@
     "markdown.extension.showExplorer": true,
     "markdown.extension.toc.githubCompatibility": true,
     "markdown.extension.toc.updateOnSave": false,
+    "markdownIndex.indexBase": "##",
     "markdownlint.run": "onType",
     "spellright.documentTypes": [
         "latex",
