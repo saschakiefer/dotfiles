@@ -1,10 +1,13 @@
 // Platzieren Sie Ihre Einstellungen in dieser Datei, um die Standardeinstellungen zu überschreiben.
 {
     "[markdown]": {
-        "editor.fontSize": 18,
+        "editor.fontSize": 16,
         "editor.minimap.enabled": false,
         "editor.tabSize": 2
     },
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.occurrencesHighlight": false,
     "editor.tokenColorCustomizations": {
         "textMateRules": [{
             "scope": "string.quoted.other.footnote",
@@ -14,8 +17,6 @@
             }
         }]
     },
-    "editor.formatOnSave": true,
-    "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
     "eslint.enable": true,
     "git.autofetch": true,
@@ -35,7 +36,7 @@
     "markdown.extension.showExplorer": true,
     "markdown.extension.toc.githubCompatibility": true,
     "markdown.extension.toc.updateOnSave": false,
-    "markdownIndex.indexBase": "##",
+    "markdownIndex.indexBase": "-",
     "markdownlint.run": "onType",
     "spellright.documentTypes": [
         "latex",
@@ -49,7 +50,23 @@
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "window.zoomLevel": 0,
+    "workbench.colorCustomizations": {
+        "editorOverviewRuler.errorForeground": "#1e1e1e",
+        "editorOverviewRuler.warningForeground": "#1e1e1e",
+        "editorOverviewRuler.commonContentForeground": "#1e1e1e",
+        "editorOverviewRuler.currentContentForeground": "#1e1e1e",
+        "editorOverviewRuler.infoForeground": "#1e1e1e",
+        "editorOverviewRuler.incomingContentForeground": "#1e1e1e",
+
+        "editorOverviewRuler.addedForeground": "#1e1e1e",
+        "editorOverviewRuler.modifiedForeground": "#1e1e1e",
+        "editorOverviewRuler.deletedForeground": "#1e1e1e",
+
+        "editorGutter.addedBackground": "#1e1e1e",
+        "editorGutter.modifiedBackground": "#1e1e1e",
+        "editorGutter.deletedBackground": "#1e1e1e"
+    },
     "workbench.startupEditor": "newUntitledFile",
     "zenMode.hideActivityBar": true,
-    "zenMode.hideLineNumbers": false,
+    "zenMode.hideLineNumbers": false
 }
