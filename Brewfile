@@ -33,7 +33,6 @@ cask "google-chrome"
 cask "java8"
 cask "little-snitch"
 cask "scrivener"
-cask "tor-browser"
 cask "typinator"
 cask "visual-studio-code"
 
@@ -44,7 +43,6 @@ mas "Amphetamine", id: 937984704
 mas "AudioBookBinder", id: 413969927 
 mas "Day One", id: 1055511498 
 mas "Evernote", id: 406056744 
-mas "GarageBand", id: 682658836 
 mas "Garmin BaseCamp", id: 411052274 
 mas "Garmin WebUpdater", id: 477318609 
 mas "GhosteryLite", id: 1436953057 
