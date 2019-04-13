@@ -21,18 +21,20 @@ brew "pkg-config"
 brew "wget"
 brew "zsh-syntax-highlighting"
 brew "zsh"
+
 cask "1password-cli"
 cask "bartender"
-cask "docker"
 cask "charles"
 cask "cliqz"
 cask "cyberduck"
 cask "devonthink-pro"
+cask "docker"
 cask "dropbox"
 cask "firefox"
 cask "google-chrome"
 cask "java8"
 cask "little-snitch"
+cask "omnifocus"
 cask "scrivener"
 cask "typinator"
 cask "visual-studio-code"
@@ -59,5 +61,4 @@ mas "Pages", id: 409201541
 mas "Slack", id: 803453959 
 mas "StarMoney", id: 1237596145 
 mas "The Unarchiver", id: 425424353 
-mas "Things3", id: 904280696 
 mas "WhatsApp", id: 1147396723
