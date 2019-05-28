@@ -36,6 +36,11 @@ cask "java8"
 cask "little-snitch"
 cask "omnifocus"
 cask "scrivener"
+<<<<<<< HEAD
+=======
+cask "tor-browser"
+cask "timer"
+>>>>>>> Timer added
 cask "typinator"
 cask "visual-studio-code"
 
