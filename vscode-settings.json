@@ -1,72 +1,67 @@
 // Platzieren Sie Ihre Einstellungen in dieser Datei, um die Standardeinstellungen zu überschreiben.
 {
-    "[markdown]": {
-        "editor.fontSize": 16,
-        "editor.minimap.enabled": false,
-        "editor.tabSize": 2
-    },
-    "editor.formatOnSave": true,
+  "[markdown]": {
+    "editor.fontSize": 12,
     "editor.minimap.enabled": false,
-    "editor.occurrencesHighlight": false,
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [{
-            "scope": "string.quoted.other.footnote",
-            "settings": {
-                "foreground": "#4b4b4b",
-                "fontStyle": "italic"
-            }
-        }]
-    },
-    "editor.wordWrap": "on",
-    "eslint.enable": true,
-    "git.autofetch": true,
-    "git.confirmSync": false,
-    "git.enableSmartCommit": true,
-    "gitlens.advanced.messages": {
-        "suppressShowKeyBindingsNotice": true,
-        "suppressWelcomeNotice": true
-    },
-    "gitlens.keymap": "chorded",
-    "gitlens.currentLine.enabled": false,
-    "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": false,
-    "jshint.enable": false,
-    "markdown.extension.italic.indicator": "_",
-    "markdown.extension.preview.autoShowPreviewToSide": false,
-    "markdown.extension.showExplorer": true,
-    "markdown.extension.toc.githubCompatibility": true,
-    "markdown.extension.toc.updateOnSave": false,
-    "markdownIndex.indexBase": "-",
-    "markdownlint.run": "onType",
-    "spellright.documentTypes": [
-        "latex",
-        "markdown",
-        "plaintext"
-    ],
-    "spellright.language": [
-        "de",
-        "en"
-    ],
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "window.zoomLevel": 0,
-    "workbench.colorCustomizations": {
-        "editorOverviewRuler.errorForeground": "#1e1e1e",
-        "editorOverviewRuler.warningForeground": "#1e1e1e",
-        "editorOverviewRuler.commonContentForeground": "#1e1e1e",
-        "editorOverviewRuler.currentContentForeground": "#1e1e1e",
-        "editorOverviewRuler.infoForeground": "#1e1e1e",
-        "editorOverviewRuler.incomingContentForeground": "#1e1e1e",
+    "editor.tabSize": 2
+  },
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.occurrencesHighlight": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "string.quoted.other.footnote",
+        "settings": {
+          "foreground": "#4b4b4b",
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "editor.wordWrap": "on",
+  "eslint.enable": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true,
+    "suppressWelcomeNotice": true
+  },
+  "gitlens.keymap": "chorded",
+  "gitlens.currentLine.enabled": false,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": false,
+  "jshint.enable": false,
+  "markdown.extension.italic.indicator": "_",
+  "markdown.extension.preview.autoShowPreviewToSide": false,
+  "markdown.extension.showExplorer": true,
+  "markdown.extension.toc.githubCompatibility": true,
+  "markdown.extension.toc.updateOnSave": false,
+  "markdownIndex.indexBase": "-",
+  "markdownlint.run": "onType",
+  "spellright.documentTypes": ["latex", "markdown", "plaintext"],
+  "spellright.language": ["de", "en"],
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "window.zoomLevel": 0,
+  "workbench.colorCustomizations": {
+    "editorOverviewRuler.errorForeground": "#1e1e1e",
+    "editorOverviewRuler.warningForeground": "#1e1e1e",
+    "editorOverviewRuler.commonContentForeground": "#1e1e1e",
+    "editorOverviewRuler.currentContentForeground": "#1e1e1e",
+    "editorOverviewRuler.infoForeground": "#1e1e1e",
+    "editorOverviewRuler.incomingContentForeground": "#1e1e1e",
 
-        "editorOverviewRuler.addedForeground": "#1e1e1e",
-        "editorOverviewRuler.modifiedForeground": "#1e1e1e",
-        "editorOverviewRuler.deletedForeground": "#1e1e1e",
+    "editorOverviewRuler.addedForeground": "#1e1e1e",
+    "editorOverviewRuler.modifiedForeground": "#1e1e1e",
+    "editorOverviewRuler.deletedForeground": "#1e1e1e",
 
-        "editorGutter.addedBackground": "#1e1e1e",
-        "editorGutter.modifiedBackground": "#1e1e1e",
-        "editorGutter.deletedBackground": "#1e1e1e"
-    },
-    "workbench.startupEditor": "newUntitledFile",
-    "zenMode.hideActivityBar": true,
-    "zenMode.hideLineNumbers": false
+    "editorGutter.addedBackground": "#1e1e1e",
+    "editorGutter.modifiedBackground": "#1e1e1e",
+    "editorGutter.deletedBackground": "#1e1e1e"
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "zenMode.hideActivityBar": true,
+  "zenMode.hideLineNumbers": false
 }
