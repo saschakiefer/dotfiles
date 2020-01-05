@@ -64,3 +64,6 @@ then
     # export HTTPS_PROXY="http://proxy.wdf.sap.corp:8080"
     # export NO_PROXY="localhost,127.0.0.0/8,*.local,*.sap.corp"
 fi
+
+# Set Python Alias
+alias python=/usr/local/bin/python3 
