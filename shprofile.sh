@@ -66,4 +66,4 @@ then
 fi
 
 # Set Python Alias
-alias python=/usr/local/bin/python3 
+# alias python=/usr/local/bin/python3 
