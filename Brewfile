@@ -8,8 +8,10 @@ tap "homebrew/core"
 tap "homebrew/formula-analytics"
 tap "homebrew/services"
 tap "homebrew/test-bot"
+tap "homebrew/cask-fonts"
 
 brew "cf-cli"
+brew "awscli"
 brew "git-imerge"
 brew "git-when-merged"
 brew "git"
@@ -21,6 +23,8 @@ brew "pkg-config"
 brew "wget"
 brew "zsh-syntax-highlighting"
 brew "zsh"
+brew "powerlevel9k"
+brew "python@3.8"
 
 cask "1password-cli"
 cask "bartender"
@@ -39,6 +43,7 @@ cask "scrivener"
 cask "timer"
 cask "typinator"
 cask "visual-studio-code"
+cask "homebrew/cask-fonts/font-meslo-nerd-font"
 
 mas "1Password 7", id: 1333542190 
 mas "AdBlock", id: 1402042596 
