@@ -49,14 +49,14 @@ quiet_which() {
 add_to_path_end "/sbin"
 add_to_path_end "$HOME/.gem/ruby/2.3.0/bin"
 add_to_path_end "$HOME/.rbenv/bin"
-add_to_path_end "$HOME/.cabal/bin"
+# add_to_path_end "$HOME/.cabal/bin"
 add_to_path_end "$HOME/.dotfiles/bin"
 add_to_path_start "/usr/local/bin"
 add_to_path_start "/usr/local/sbin"
 
 # Setup Go development
-export GOPATH="$HOME/.gopath"
-add_to_path_end "$GOPATH/bin"
+# export GOPATH="$HOME/.gopath"
+# add_to_path_end "$GOPATH/bin"
 
 # Run rbenv if it exists
 quiet_which rbenv && add_to_path_start "$(rbenv root)/shims"
@@ -141,15 +141,15 @@ then
 
   add_to_path_end "$HOMEBREW_PREFIX/opt/git/share/git-core/contrib/diff-highlight"
   add_to_path_end "$HOME/Library/Python/2.7/bin"
-  add_to_path_end "/Applications/Fork.app/Contents/Resources"
-  add_to_path_end "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+  # add_to_path_end "/Applications/Fork.app/Contents/Resources"
+  add_to_path_end "/Applications/VSCodium.app/Contents/Resources/app/bin"
   add_to_path_end "/Applications/Xcode.app/Contents/Developer/usr/bin"
   add_to_path_end "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin"
 
   alias ql="qlmanage -p 1>/dev/null"
   alias locate="mdfind -name"
   alias finder-hide="setfile -a V"
-  alias fork="fork_cli"
+  # alias fork="fork_cli"
 
   # Old default Curl is broken for Git on Leopard.
   [ "$OSTYPE" = "darwin9.0" ] && export GIT_SSL_NO_VERIFY=1

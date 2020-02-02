@@ -1,13 +1,21 @@
-// Platzieren Sie Ihre Einstellungen in dieser Datei, um die Standardeinstellungen zu überschreiben.
 {
   "[markdown]": {
-    "editor.fontSize": 12,
+    "editor.fontSize": 13,
     "editor.minimap.enabled": false,
     "editor.tabSize": 2
   },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "cSpell.userWords": ["tweepy"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontSize": 13,
+  "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.formatOnType": true,
   "editor.minimap.enabled": false,
-  "editor.occurrencesHighlight": false,
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -20,7 +28,14 @@
     ]
   },
   "editor.wordWrap": "on",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
   "eslint.enable": true,
+  "explorer.confirmDragAndDrop": false,
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
@@ -28,8 +43,8 @@
     "suppressShowKeyBindingsNotice": true,
     "suppressWelcomeNotice": true
   },
-  "gitlens.keymap": "chorded",
   "gitlens.currentLine.enabled": false,
+  "gitlens.keymap": "chorded",
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": false,
   "jshint.enable": false,
@@ -40,27 +55,32 @@
   "markdown.extension.toc.updateOnSave": false,
   "markdownIndex.indexBase": "-",
   "markdownlint.run": "onType",
+  "python.dataScience.askForKernelRestart": false,
+  "python.jediEnabled": false,
   "spellright.documentTypes": ["latex", "markdown", "plaintext"],
   "spellright.language": ["de", "en"],
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
+  "terminal.integrated.fontFamily": "MesloLGL Nerd Font",
+  "terminal.integrated.fontSize": 10,
+  "terminal.integrated.rendererType": "dom",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.zoomLevel": 0,
   "workbench.colorCustomizations": {
-    "editorOverviewRuler.errorForeground": "#1e1e1e",
-    "editorOverviewRuler.warningForeground": "#1e1e1e",
-    "editorOverviewRuler.commonContentForeground": "#1e1e1e",
-    "editorOverviewRuler.currentContentForeground": "#1e1e1e",
-    "editorOverviewRuler.infoForeground": "#1e1e1e",
-    "editorOverviewRuler.incomingContentForeground": "#1e1e1e",
-
-    "editorOverviewRuler.addedForeground": "#1e1e1e",
-    "editorOverviewRuler.modifiedForeground": "#1e1e1e",
-    "editorOverviewRuler.deletedForeground": "#1e1e1e",
-
-    "editorGutter.addedBackground": "#1e1e1e",
-    "editorGutter.modifiedBackground": "#1e1e1e",
-    "editorGutter.deletedBackground": "#1e1e1e"
+    "editorOverviewRuler.errorForeground": "#272A35",
+    "editorOverviewRuler.warningForeground": "#272A35",
+    "editorOverviewRuler.commonContentForeground": "#272A35",
+    "editorOverviewRuler.currentContentForeground": "#272A35",
+    "editorOverviewRuler.infoForeground": "#272A35",
+    "editorOverviewRuler.incomingContentForeground": "#272A35",
+    "editorOverviewRuler.addedForeground": "#272A35",
+    "editorOverviewRuler.modifiedForeground": "#272A35",
+    "editorOverviewRuler.deletedForeground": "#272A35",
+    "editorGutter.addedBackground": "#272A35",
+    "editorGutter.modifiedBackground": "#272A35",
+    "editorGutter.deletedBackground": "#272A35"
   },
+  "workbench.colorTheme": "Dracula",
   "workbench.startupEditor": "newUntitledFile",
   "zenMode.hideActivityBar": true,
   "zenMode.hideLineNumbers": false

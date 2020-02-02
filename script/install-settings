@@ -1,15 +1,6 @@
 #!/bin/bash
 set -e
 
-# Link CLIQZ Browser Settings
-if [ ! -d ~/Library/Application\ Support/CLIQZ/Profiles ]; then
-    echo "Creating Cliqz user directory"
-    mkdir -p ~/Library/Application\ Support/CLIQZ/Profiles
-fi
-
-echo "Linking Cliqz profile"
-ln -sf ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Settings/Cliqz/y43yam2o.default ~/Library/Application\ Support/CLIQZ/Profiles/y43yam2o.default
-
 # DEVONThink Templates
 if [ ! -d ~/Library/Application\ Support/DEVONthink\ Pro\ 2/Templates.noindex ]; then
     echo "Creating DEVONThink User directory"
