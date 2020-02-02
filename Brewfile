@@ -1,10 +1,9 @@
-tap "caskroom/cask"
-tap "caskroom/fonts"
 tap "cloudfoundry/tap"
 tap "github/bootstrap"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
@@ -70,4 +69,3 @@ mas "Slack", id: 803453959
 mas "StarMoney", id: 1237596145
 mas "The Unarchiver", id: 425424353
 mas "WhatsApp", id: 1147396723
-mas "Xcode", id: 497799835
