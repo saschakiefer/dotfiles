@@ -92,7 +92,7 @@ POWERLEVEL9K_VCS_UNTRACKED_ICON='?'
 POWERLEVEL9K_VIRTUALENV_BACKGROUND='yellow'
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon root_indicator context custom_python_version virtualenv_joined pyenv dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time custom_wifi_signal ram disk_usage load background_jobs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time custom_wifi_signal ram disk_usage background_jobs)
 
 #POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 
