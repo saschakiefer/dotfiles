@@ -70,6 +70,15 @@ zsh_python_version(){
   echo " ${output:7}"
 }
 
+
+POWERLEVEL9K_CUSTOM_CONDA_ENVIRONMENT_BACKGROUND='yellow'
+POWERLEVEL9K_CUSTOM_CONDA_ENVIRONMENT='zsh_conda_environment'
+zsh_conda_environment(){
+  if [[ ! -z "${CONDA_DEFAULT_ENV}" ]]; then
+    echo "(ﬆ ${CONDA_DEFAULT_ENV})"
+  fi
+}
+
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=3
 POWERLEVEL9K_ALWAYS_SHOW_CONTEXT=true
 POWERLEVEL9K_CONTEXT_TEMPLATE='%n@%m'
@@ -91,7 +100,7 @@ POWERLEVEL9K_VCS_UNTRACKED_ICON='?'
 
 POWERLEVEL9K_VIRTUALENV_BACKGROUND='yellow'
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon root_indicator context custom_python_version virtualenv_joined pyenv dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator context custom_python_version virtualenv_joined custom_conda_environment_joined dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time custom_wifi_signal ram disk_usage background_jobs)
 
 #POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
@@ -111,6 +120,7 @@ POWERLEVEL9K_LOAD_NORMAL_VISUAL_IDENTIFIER_COLOR="green"
 POWERLEVEL9K_HOME_ICON=''
 POWERLEVEL9K_HOME_SUB_ICON=''
 POWERLEVEL9K_FOLDER_ICON=''
+POWERLEVEL9K_APPLE_ICON=''
 POWERLEVEL9K_DIR_SHOW_WRITABLE=true
 POWERLEVEL9K_STATUS_VERBOSE=true
 POWERLEVEL9K_STATUS_CROSS=true
