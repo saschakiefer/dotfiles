@@ -122,7 +122,7 @@ then
   export CLICOLOR=1
   export VAGRANT_DEFAULT_PROVIDER="vmware_fusion"
   export RESQUE_REDIS_URL="redis://localhost:6379"
-  export HEROKU_ORGANIZATION="github-enterprise"
+  export HEROKU_ORGANIZATION=""
 
   if quiet_which diff-highlight
   then
