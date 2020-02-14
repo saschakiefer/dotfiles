@@ -77,7 +77,6 @@ alias rg="rg --colors 'match:style:nobold' --colors 'path:style:nobold'"
 alias be="noglob bundle exec"
 alias sha256="shasum -a 256"
 alias ...="cd .."
-alias envs="ls -al ~/anaconda3/envs"
 
 # Platform-specific stuff
 if quiet_which brew
@@ -235,18 +234,3 @@ alias github-api-curl="noglob github-api-curl"
 
 # Look in ./bin but do it last to avoid weird `which` results.
 force_add_to_path_start "bin"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/sascha/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/sascha/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/sascha/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/sascha/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<

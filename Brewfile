@@ -16,17 +16,19 @@ tap "vapor/tap"
 brew "aws-elasticbeanstalk"
 brew "awscli"
 brew "cf-cli"
+brew "git"
 brew "git-imerge"
 brew "git-when-merged"
-brew "git"
 brew "mas"
 brew "node-build"
 brew "nodenv"
 brew "openssl"
 brew "pkg-config"
 brew "powerlevel9k"
+brew "pycodestyle"
 brew "python@3.8"
 brew "wget"
+brew "yamllint"
 brew "zsh"
 brew "zsh-syntax-highlighting"
 
@@ -65,7 +67,7 @@ mas "Magnet", id: 441258766
 mas "Marked 2", id: 890031187
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Slack", id: 803453959 
+mas "Slack", id: 803453959
 mas "StarMoney", id: 1237596145
 mas "The Unarchiver", id: 425424353
 mas "WhatsApp", id: 1147396723
