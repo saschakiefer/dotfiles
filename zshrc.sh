@@ -130,3 +130,4 @@ POWERLEVEL9K_STATUS_CROSS=true
 
 
 
+export PATH="/usr/local/opt/node@12/bin:$PATH"

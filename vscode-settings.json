@@ -10,12 +10,12 @@
   "cSpell.userWords": ["tweepy"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontSize": 13,
-  "editor.formatOnPaste": true,
+  "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.minimap.enabled": false,
   "editor.suggestSelection": "first",
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -119,5 +119,6 @@
   ],
   "python.linting.flake8Args": [
     "--ignore=E501"
-  ]
+  ],
+  "python.linter": "PyLint"
 }
