@@ -77,13 +77,16 @@
     "editorOverviewRuler.deletedForeground": "#272A35",
     "editorGutter.addedBackground": "#272A35",
     "editorGutter.modifiedBackground": "#272A35",
-    "editorGutter.deletedBackground": "#272A35"
+    "editorGutter.deletedBackground": "#272A35",
+    "statusBar.background": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f"
   },
   "workbench.colorTheme": "Dracula",
   "workbench.startupEditor": "newUntitledFile",
   "zenMode.hideActivityBar": true,
   "zenMode.hideLineNumbers": false,
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "cSpell.enabledLanguageIds": [
     "asciidoc",
     "c",
@@ -117,8 +120,6 @@
     "yaml",
     "yml"
   ],
-  "python.linting.flake8Args": [
-    "--ignore=E501"
-  ],
+  "python.linting.flake8Args": ["--ignore=E501"],
   "python.linter": "PyLint"
 }

@@ -7,7 +7,7 @@
 	autocrlf = false
 	filemode = false
 	excludesfile = ~/.gitignore
-	editor = code
+	editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' --wait --new-window
     attributesfile = ~/.gitattributes
 [gerrit]
 	createchangeid = true
