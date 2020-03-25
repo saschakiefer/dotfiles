@@ -176,9 +176,9 @@ then
 fi
 
 # Set up editor
-if quiet_which code
+if quiet_which subl
 then
-  export EDITOR="code"
+  export EDITOR="subl"
   export GIT_EDITOR="$EDITOR -w"
   export SVN_EDITOR="$GIT_EDITOR"
 elif quiet_which vim
