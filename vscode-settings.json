@@ -96,7 +96,8 @@
   },
   "[git-commit]": {
     "editor.rulers": [
-      50
+      50,
+      72
     ]
   },
   "[python]": {
