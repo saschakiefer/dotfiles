@@ -4,11 +4,6 @@
     "editor.minimap.enabled": false,
     "editor.tabSize": 2
   },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
-  },
-  "cSpell.userWords": ["tweepy"],
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontSize": 13,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
@@ -16,17 +11,6 @@
   "editor.minimap.enabled": false,
   "editor.suggestSelection": "first",
   "editor.tabSize": 4,
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": "string.quoted.other.footnote",
-        "settings": {
-          "foreground": "#4b4b4b",
-          "fontStyle": "italic"
-        }
-      }
-    ]
-  },
   "editor.wordWrap": "on",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
@@ -34,60 +18,36 @@
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
   },
-  "eslint.enable": true,
   "explorer.confirmDragAndDrop": false,
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true,
-    "suppressWelcomeNotice": true
-  },
-  "gitlens.currentLine.enabled": false,
-  "gitlens.keymap": "chorded",
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": false,
-  "jshint.enable": false,
   "markdown.extension.italic.indicator": "_",
   "markdown.extension.preview.autoShowPreviewToSide": false,
-  "markdown.extension.showExplorer": true,
   "markdown.extension.toc.githubCompatibility": true,
   "markdown.extension.toc.updateOnSave": false,
-  "markdownIndex.indexBase": "-",
-  "markdownlint.run": "onType",
   "python.dataScience.askForKernelRestart": false,
-  "spellright.documentTypes": ["latex", "markdown", "plaintext"],
-  "spellright.language": ["de", "en"],
+  "spellright.documentTypes": [
+    "latex",
+    "markdown",
+    "plaintext"
+  ],
+  "spellright.language": [
+    "de",
+    "en"
+  ],
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "terminal.integrated.fontFamily": "MesloLGL Nerd Font",
-  "terminal.integrated.fontSize": 10,
+  "terminal.integrated.fontSize": 12,
   "terminal.integrated.rendererType": "dom",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.zoomLevel": 0,
-  "workbench.colorCustomizations": {
-    "editorOverviewRuler.errorForeground": "#272A35",
-    "editorOverviewRuler.warningForeground": "#272A35",
-    "editorOverviewRuler.commonContentForeground": "#272A35",
-    "editorOverviewRuler.currentContentForeground": "#272A35",
-    "editorOverviewRuler.infoForeground": "#272A35",
-    "editorOverviewRuler.incomingContentForeground": "#272A35",
-    "editorOverviewRuler.addedForeground": "#272A35",
-    "editorOverviewRuler.modifiedForeground": "#272A35",
-    "editorOverviewRuler.deletedForeground": "#272A35",
-    "editorGutter.addedBackground": "#272A35",
-    "editorGutter.modifiedBackground": "#272A35",
-    "editorGutter.deletedBackground": "#272A35",
-    "statusBar.background": "#005f5f",
-    "statusBar.noFolderBackground": "#005f5f",
-    "statusBar.debuggingBackground": "#005f5f"
-  },
   "workbench.colorTheme": "Dracula",
   "workbench.startupEditor": "newUntitledFile",
   "zenMode.hideActivityBar": true,
   "zenMode.hideLineNumbers": false,
   "workbench.sideBar.location": "left",
-  "cSpell.enabledLanguageIds": [
+  "cSpell.enableFiletypes": [
     "asciidoc",
     "c",
     "cpp",
@@ -107,6 +67,7 @@
     "latex",
     "less",
     "markdown",
+    "python",
     "php",
     "plaintext",
     "pug",
@@ -120,6 +81,17 @@
     "yaml",
     "yml"
   ],
-  "python.linting.flake8Args": ["--ignore=E501"],
-  "python.linter": "PyLint"
+  "python.linting.flake8Args": [
+    "--ignore=E501"
+  ],
+  "editor.cursorSmoothCaretAnimation": true,
+  "code-runner.enableAppInsights": false,
+  "editor.lineNumbers": "relative",
+  "vim.highlightedyank.enable": true,
+  "vim.statusBarColorControl": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#5f0000",
+    "statusBar.noFolderBackground": "#5f0000",
+    "statusBar.debuggingBackground": "#5f0000"
+  },
 }

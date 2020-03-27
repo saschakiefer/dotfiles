@@ -21,7 +21,6 @@ brew "git"
 brew "git-imerge"
 brew "git-when-merged"
 brew "mas"
-brew "neovim"
 brew "node-build"
 brew "nodenv"
 brew "openssl"
@@ -51,7 +50,7 @@ cask "omnifocus"
 cask "omnigraffle"
 cask "skype"
 cask "typinator"
-cask "vscodium"
+cask "visual-studio-code"
 
 mas "1Password 7", id: 1333542190
 mas "AdBlock", id: 1402042596
