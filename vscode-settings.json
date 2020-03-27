@@ -94,4 +94,18 @@
     "statusBar.noFolderBackground": "#5f0000",
     "statusBar.debuggingBackground": "#5f0000"
   },
+  "[git-commit]": {
+    "editor.rulers": [
+      50
+    ]
+  },
+  "[python]": {
+    "editor.rulers": [
+      72,
+      79
+    ]
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true
 }
