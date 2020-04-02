@@ -42,7 +42,7 @@
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.rendererType": "dom",
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Cobalt2",
   "workbench.startupEditor": "newUntitledFile",
   "zenMode.hideActivityBar": true,
   "zenMode.hideLineNumbers": false,
@@ -108,5 +108,7 @@
   },
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true
+  "files.trimFinalNewlines": true,
+  "explorer.compactFolders": false,
+  "workbench.tree.indent": 17
 }
