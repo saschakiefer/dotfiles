@@ -49,18 +49,13 @@ svn_branch() {
 
 if [ "$USER" = "root" ]
 then
-  export PROMPT='%{$fg_bold[magenta]%}%n@%m %{$fg_bold[blue]%}%b%f %{$fg_bold[blue]%}%~%b%f %{$fg_bold[red]%}$(git_branch)%{$fg_bold[yellow]%}$(svn_branch)%b$ '   
+  export PROMPT='%{$fg_bold[magenta]%}%n@%m %{$fg_bold[blue]%}%b%f %{$fg_bold[blue]%}%~%b%f %{$fg_bold[red]%}$(git_branch)%{$fg_bold[yellow]%}$(svn_branch)%b$ '
 elif [ -n "${SSH_CONNECTION}" ]
 then
-  export PROMPT='%{$fg_bold[cyan]%}%n@%m %{$fg_bold[blue]%}%b%f %{$fg_bold[blue]%}%~%b%f %{$fg_bold[red]%}$(git_branch)%{$fg_bold[yellow]%}$(svn_branch)%b$ '   
+  export PROMPT='%{$fg_bold[cyan]%}%n@%m %{$fg_bold[blue]%}%b%f %{$fg_bold[blue]%}%~%b%f %{$fg_bold[red]%}$(git_branch)%{$fg_bold[yellow]%}$(svn_branch)%b$ '
 else
-  export PROMPT='%{$fg_bold[green]%}%n@%m %{$fg_bold[blue]%}%b%f %{$fg_bold[blue]%}%~%b%f %{$fg_bold[red]%}$(git_branch)%{$fg_bold[yellow]%}$(svn_branch)%b$ '   
+  export PROMPT='%{$fg_bold[green]%}%n@%m %{$fg_bold[blue]%}%b%f %{$fg_bold[blue]%}%~%b%f %{$fg_bold[red]%}$(git_branch)%{$fg_bold[yellow]%}$(svn_branch)%b$ '
 fi
 
 # more macOS/Bash-like word jumps
 export WORDCHARS=""
-
-# Setting PATH for Python 3.8
-# The original version is saved in .zprofile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
-export PATH

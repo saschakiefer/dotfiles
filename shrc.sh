@@ -131,9 +131,10 @@ then
 
   add_to_path_end "$HOMEBREW_PREFIX/opt/git/share/git-core/contrib/diff-highlight"
   add_to_path_end "$HOME/Library/Python/2.7/bin"
-  add_to_path_end "/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin"
+  add_to_path_end "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
   add_to_path_end "/Applications/Xcode.app/Contents/Developer/usr/bin"
   add_to_path_end "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin"
+  add_to_path_end "/usr/local/opt/node@12/bin"
 
   alias ql="qlmanage -p 1>/dev/null"
   alias locate="mdfind -name"
@@ -195,6 +196,10 @@ github-api-curl() {
   curl -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/$1"
 }
 alias github-api-curl="noglob github-api-curl"
+
+# Add Python 3.8 to the path
+force_add_to_path_start "/Users/sascha/Library/Python/3.8/bin"
+force_add_to_path_start "/Library/Frameworks/Python.framework/Versions/3.8/bin"
 
 # Look in ./bin but do it last to avoid weird `which` results.
 force_add_to_path_start "bin"
