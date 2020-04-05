@@ -53,6 +53,6 @@ export HUBOT_GITHUB_TOKEN="$GITHUB_TOKEN"
 export OCTOKIT_ACCESS_TOKEN="$GITHUB_TOKEN"
 
 # Set stuff for the work Mac
-if [ -e ~/.isWorkMac ]
-then
-fi
+# if [ -e ~/.isWorkMac ]
+# then
+# fi

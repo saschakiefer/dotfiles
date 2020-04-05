@@ -199,7 +199,7 @@ alias github-api-curl="noglob github-api-curl"
 
 # Add Python 3.8 to the path
 force_add_to_path_start "/Users/sascha/Library/Python/3.8/bin"
-force_add_to_path_start "/Library/Frameworks/Python.framework/Versions/3.8/bin"
+force_add_to_path_start "/usr/local/opt/python@3.8/bin"
 
 # Look in ./bin but do it last to avoid weird `which` results.
 force_add_to_path_start "bin"
