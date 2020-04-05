@@ -1,0 +1,2 @@
+- iTerm Setup
+- Initial VSCode Setup to Download and Initialize Settings Sync

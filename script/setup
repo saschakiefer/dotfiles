@@ -37,7 +37,6 @@ if [ $MACOS ]
 then
   brew install git
   script/extract-onepassword-secrets
-  script/install-settings
   if [ "$SHELL" != "/bin/zsh" ]
   then
     if [ -e ~/.isWorkMac ]
