@@ -1,3 +1,5 @@
+tap "caskroom/cask"
+tap "caskroom/fonts"
 tap "cloudfoundry/tap"
 tap "github/bootstrap"
 tap "heroku/brew"
@@ -16,7 +18,6 @@ tap "vapor/tap"
 brew "aws-elasticbeanstalk"
 brew "awscli"
 brew "cf-cli"
-brew "flake8"
 brew "git"
 brew "git-imerge"
 brew "git-when-merged"
@@ -28,7 +29,6 @@ brew "pkg-config"
 brew "powerlevel9k"
 brew "pycodestyle"
 brew "python@3.8"
-brew "ranger"
 brew "wget"
 brew "yamllint"
 brew "zsh"
@@ -41,19 +41,32 @@ cask "cyberduck"
 cask "devonthink-pro"
 cask "docker"
 cask "dropbox"
+cask "epubquicklook"
+cask "evernote"
 cask "firefox"
+cask "font-meslo-nerd-font"
 cask "google-chrome"
 cask "java8"
 cask "little-snitch"
-cask "font-meslo-nerd-font"
 cask "omnifocus"
 cask "omnigraffle"
+cask "qlcolorcode"
+cask "qlmarkdown"
+cask "qlstephen"
+cask "quicklook-csv"
+cask "quicklook-json"
 cask "skype"
+cask "sublime-text"
+cask "tor-browser"
 cask "typinator"
+cask "virtualbox"
+cask "virtualbox-extension-pack"
 cask "visual-studio-code"
+cask "vlc"
 
 mas "1Password 7", id: 1333542190
 mas "AdBlock", id: 1402042596
+mas "Apple Configurator 2", id: 1037126344
 mas "AudioBookBinder", id: 413969927
 mas "BaseCamp", id: 411052274
 mas "Drafts", id: 1435957248
@@ -73,3 +86,4 @@ mas "Slack", id: 803453959
 mas "StarMoney", id: 1237596145
 mas "The Unarchiver", id: 425424353
 mas "WhatsApp", id: 1147396723
+mas "Xcode", id: 497799835
