@@ -27,7 +27,7 @@
 	changed = cyan bold
 	untracked = red bold
 [diff]
- 
+
 [alias]
     st = status
     ci = commit
@@ -44,13 +44,6 @@
     b = branch
     ds = diff --stat=160,120
     dh1 = diff HEAD~1
-
-    # Divergence (commits we added and commits remote added)
-    div = divergence
-
-    # Goodness (summary of diff lines added/removed/total)
-    gn = goodness
-    gnc = goodness --cached
 
     # Fancy logging.
     #   h = head
@@ -73,7 +66,7 @@
 	keepBackup = true
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true

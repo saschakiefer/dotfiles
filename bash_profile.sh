@@ -37,25 +37,6 @@ function parse_git_branch {
   echo "("${ref#refs/heads/}")"
 }
 
-# Colorful prompt
-# RED="\[\033[0;31m\]"
-# YELLOW="\[\033[0;33m\]"
-# GREEN="\[\033[0;32m\]"
-# GREY="\[\033[0;37m\]"
-
-# if [ "$USER" = "root" ]
-# then
-#   PS1="$GREEN\u@\h \w $YELLOW\$(parse_git_branch)$GREY\$ "
-# elif [ -n "${SSH_CONNECTION}" ]
-# then
-#   PS1="$GREEN\u@\h \w $YELLOW\$(parse_git_branch)$GREY\$ "
-# else
-#   PS1="$GREEN\u@\h \w $YELLOW\$(parse_git_branch)$GREY\$ "
-# fi
-
-# Aliases
-# alias ...="cd .."
-
 # only set key bindings on interactive shell
 if [ -n "$INTERACTIVE_BASH" ]
 then
@@ -66,4 +47,3 @@ then
   bind '"^u" history-search-backward'
   bind '"^v" history-search-forward'
 fi
-

@@ -25,9 +25,6 @@ setopt no_hup
 # use emacs bindings even with vim as EDITOR
 bindkey -e
 
-# fix backspace on Debian
-[ -n "$LINUX" ] && bindkey "^?" backward-delete-char
-
 # fix delete key on macOS
 [ -n "$MACOS" ] && bindkey '\e[3~' delete-char
 
@@ -124,10 +121,5 @@ POWERLEVEL9K_APPLE_ICON=''
 POWERLEVEL9K_DIR_SHOW_WRITABLE=true
 POWERLEVEL9K_STATUS_VERBOSE=true
 POWERLEVEL9K_STATUS_CROSS=true
-
-
-
-
-
 
 export PATH="/usr/local/opt/node@12/bin:$PATH"
