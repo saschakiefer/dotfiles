@@ -9,3 +9,10 @@ fi
 
 echo "Linking DEVONThink profile"
 ln -sf ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Settings/DEVONThink/_My\ Templates ~/Library/Application\ Support/DEVONthink\ Pro\ 2/Templates.noindex/_My\ Templates
+
+# remove the not-signed message from the Finder Preview plugins
+echo Remove the not-signed message from the Finder preview plugins
+xattr -cr ~/Library/QuickLook/*.qlgenerator
+qlmanage -r
+qlmanage -r cache
+defaults write com.whomwah.quicklookstephen maxFileSize 102400
