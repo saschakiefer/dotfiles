@@ -1,4 +1,5 @@
-- iTerm Setup
-- Initial VSCode Setup to Download and Initialize Settings Sync
-- do not map app_config to the ~ directory
-- create manual post processing list
+[ ] iTerm Setup
+[ ] Initial VSCode Setup to Download and Initialize Settings Sync
+[ ] do not map app_config to the ~ directory
+[ ] auto link karbiner-elements config
+[ ] create manual post processing list
