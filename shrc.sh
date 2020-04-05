@@ -47,19 +47,9 @@ quiet_which() {
 }
 
 add_to_path_end "/sbin"
-add_to_path_end "$HOME/.gem/ruby/2.3.0/bin"
-add_to_path_end "$HOME/.rbenv/bin"
-# add_to_path_end "$HOME/.cabal/bin"
 add_to_path_end "$HOME/.dotfiles/bin"
 add_to_path_start "/usr/local/bin"
 add_to_path_start "/usr/local/sbin"
-
-# Setup Go development
-# export GOPATH="$HOME/.gopath"
-# add_to_path_end "$GOPATH/bin"
-
-# Run rbenv if it exists
-quiet_which rbenv && add_to_path_start "$(rbenv root)/shims"
 
 # Aliases
 alias mkdir="mkdir -vp"
@@ -77,7 +67,6 @@ alias rg="rg --colors 'match:style:nobold' --colors 'path:style:nobold'"
 alias be="noglob bundle exec"
 alias sha256="shasum -a 256"
 alias ...="cd .."
-alias r="ranger"
 
 # Platform-specific stuff
 if quiet_which brew
@@ -142,37 +131,16 @@ then
 
   add_to_path_end "$HOMEBREW_PREFIX/opt/git/share/git-core/contrib/diff-highlight"
   add_to_path_end "$HOME/Library/Python/2.7/bin"
-  # add_to_path_end "/Applications/Fork.app/Contents/Resources"
-  add_to_path_end "/Applications/VSCodium.app/Contents/Resources/app/bin"
+  add_to_path_end "/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin"
   add_to_path_end "/Applications/Xcode.app/Contents/Developer/usr/bin"
   add_to_path_end "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin"
 
   alias ql="qlmanage -p 1>/dev/null"
   alias locate="mdfind -name"
   alias finder-hide="setfile -a V"
-  # alias fork="fork_cli"
 
   # Old default Curl is broken for Git on Leopard.
   [ "$OSTYPE" = "darwin9.0" ] && export GIT_SSL_NO_VERIFY=1
-
-  rbenv-sync-homebrew-rubies
-elif [ "$LINUX" ]
-then
-  quiet_which keychain && eval "$(keychain -q --eval --agents ssh id_rsa)"
-
-  add_to_path_end "/data/github/shell/bin"
-
-  alias su="/bin/su -"
-  alias ls="ls -F --color=auto"
-  alias open="xdg-open"
-elif [ "$WINDOWS" ]
-then
-  alias ls="ls -F --color=auto"
-
-  open() {
-    # shellcheck disable=SC2145
-    cmd /C"$@"
-  }
 fi
 
 # Set up editor
@@ -203,11 +171,6 @@ cd() {
     && set_terminal_app_pwd
   pwd > "$HOME/.lastpwd"
   # ls
-}
-
-# Use ruby-prof to generate a call stack
-ruby-call-stack() {
-  ruby-prof --printer=call_stack --file=call_stack.html -- "$@"
 }
 
 # Pretty-print JSON files
