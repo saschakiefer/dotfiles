@@ -34,7 +34,7 @@ brew "zsh-syntax-highlighting"
 
 cask "1password-cli"
 cask "bartender"
-cask "font-fira-code"
+cask "homebrew/cask-fonts/font-fira-code"
 cask "font-fira-mono-for-powerline"
 cask "charles"
 cask "cyberduck"
