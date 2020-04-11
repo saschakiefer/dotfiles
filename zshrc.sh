@@ -30,6 +30,7 @@ bindkey -e
 
 # open ssh agent
 [ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
+ssh-add -K 2>/dev/null;
 
 # alternate mappings for Ctrl-U/V to search the history
 bindkey "^u" history-beginning-search-backward
