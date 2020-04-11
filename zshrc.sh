@@ -28,6 +28,9 @@ bindkey -e
 # fix delete key on macOS
 [ -n "$MACOS" ] && bindkey '\e[3~' delete-char
 
+# open ssh agent
+[ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
+
 # alternate mappings for Ctrl-U/V to search the history
 bindkey "^u" history-beginning-search-backward
 bindkey "^v" history-beginning-search-forward
