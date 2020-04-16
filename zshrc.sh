@@ -1,11 +1,33 @@
-# check if this is a login shell
-[ "$0" = "-zsh" ] && export LOGIN_ZSH=1
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# run zprofile if this is not a login shell
-[ -n "$LOGIN_ZSH" ] && source ~/.zprofile
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/sascha/.oh-my-zsh"
 
-# load shared shell configuration
-source ~/.shrc
+# My path extensions
+export PATH=$PATH:~/Library/Python/3.8/bin:/usr/local/opt/python@3.8/bin
+
+# Aliases
+alias mkdir="mkdir -vp"
+alias df="df -H"
+alias rm="rm -iv"
+alias mv="mv -iv"
+alias zmv="noglob zmv -vW"
+alias cp="cp -irv"
+alias du="du -sh"
+alias make="nice make"
+alias less="less --ignore-case --raw-control-chars"
+alias rsync="rsync --partial --progress --human-readable --compress"
+alias rake="noglob rake"
+alias rg="rg --colors 'match:style:nobold' --colors 'path:style:nobold'"
+alias be="noglob bundle exec"
+alias sha256="shasum -a 256"
+alias ...="cd .."
+
+export GREP_OPTIONS="--color=auto"
+
+# fix delete key on macOS
+bindkey '\e[3~' delete-char
 
 # History file
 export HISTFILE=~/.zsh_history
@@ -19,109 +41,142 @@ setopt hist_reduce_blanks
 # Share history between instances
 setopt share_history
 
-# Don't hang up background jobs
-setopt no_hup
-
-# use emacs bindings even with vim as EDITOR
-bindkey -e
-
-# fix delete key on macOS
-[ -n "$MACOS" ] && bindkey '\e[3~' delete-char
-
-# open ssh agent
-[ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
-ssh-add -K 2>/dev/null;
-
 # alternate mappings for Ctrl-U/V to search the history
 bindkey "^u" history-beginning-search-backward
 bindkey "^v" history-beginning-search-forward
 
-export TERM="xterm-256color"
-source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
-POWERLEVEL9K_CUSTOM_WIFI_SIGNAL="zsh_wifi_signal"
-POWERLEVEL9K_CUSTOM_WIFI_SIGNAL_BACKGROUND="yellow"
-POWERLEVEL9K_CUSTOM_WIFI_SIGNAL_FOREGROUND="black"
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="agnoster"
 
-zsh_wifi_signal(){
-  local output=$(/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport -I)
-  local airport=$(echo $output | grep 'AirPort' | awk -F': ' '{print $2}')
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
-  if [ "$airport" = "Off" ]; then
-          local color='%F{black}'
-          echo -n "%{$color%}Wifi Off"
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=true
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+    colored-man-pages
+    copydir
+    copyfile
+    dirpersist
+    ssh-agent
+    git
+    brew
+    osx
+ )
+
+# Setup ssh-agent
+zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa_sap
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='code'
+  export GIT_EDITOR="$EDITOR -w"
+fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Modify the agnoster Theme
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
+prompt_context() {}
+
+prompt_end() {
+  if [[ -n $CURRENT_BG ]]; then
+    print -n "%{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
   else
-          local ssid=$(echo $output | grep ' SSID' | awk -F': ' '{print $2}')
-          local speed=$(echo $output | grep 'lastTxRate' | awk -F': ' '{print $2}')
-          local color='%F{black}'
-
-          [[ $speed -gt 100 ]] && color='%F{black}'
-          [[ $speed -lt 50 ]] && color='%F{red}'
-
-          echo -n "%{$color%}$speed Mbps \uf1eb%{%f%}" # removed char not in my PowerLine font
+    print -n "%{%k%}"
   fi
+  print -n "%{%f%}\n>>>"
+  CURRENT_BG=''
 }
 
-VIRTUAL_ENV_DISABLE_PROMPT=1
-POWERLEVEL9K_VIRTUALENV_BACKGROUND='yellow'
-POWERLEVEL9K_CUSTOM_PYTHON_VERSION_BACKGROUND='yellow'
-POWERLEVEL9K_CUSTOM_PYTHON_VERSION='zsh_python_version'
-
-zsh_python_version(){
+# Display current virtual environment
+prompt_virtualenv() {
   local output="$(python -V 2>&1)"
-  echo " ${output:7}"
-}
+  color=yellow
+  prompt_segment $color $PRIMARY_FG
+  print -Pn " ${output:7}"
 
-
-POWERLEVEL9K_CUSTOM_CONDA_ENVIRONMENT_BACKGROUND='yellow'
-POWERLEVEL9K_CUSTOM_CONDA_ENVIRONMENT='zsh_conda_environment'
-zsh_conda_environment(){
-  if [[ ! -z "${CONDA_DEFAULT_ENV}" ]]; then
-    echo "(ﬆ ${CONDA_DEFAULT_ENV})"
+  if [[ -n $VIRTUAL_ENV ]]; then
+    local sub="$(echo $(basename $VIRTUAL_ENV) | awk -F "-" '{print $NF}' 2>&1)" # get suffix
+    local output=$(echo ${$(basename $VIRTUAL_ENV)/-$sub/''} 2>&1) # replace -suffix w/ ''
+    print -Pn " ≡ ${output} "
   fi
 }
-
-POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=3
-POWERLEVEL9K_ALWAYS_SHOW_CONTEXT=true
-POWERLEVEL9K_CONTEXT_TEMPLATE='%n@%m'
-POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='white'
-POWERLEVEL9K_BATTERY_CHARGING='yellow'
-POWERLEVEL9K_BATTERY_CHARGED='green'
-POWERLEVEL9K_BATTERY_DISCONNECTED='$DEFAULT_COLOR'
-POWERLEVEL9K_BATTERY_LOW_THRESHOLD='10'
-POWERLEVEL9K_BATTERY_LOW_COLOR='red'
-POWERLEVEL9K_BATTERY_STAGES="▁▂▃▄▅▆▇█"
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
-POWERLEVEL9K_BATTERY_ICON='\uf1e6 '
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{014}\u2570%F{cyan}\uF460%F{073}\uF460%F{109}\uF460%f "
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='yellow'
-POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='yellow'
-POWERLEVEL9K_VCS_UNTRACKED_ICON='?'
-
-POWERLEVEL9K_VIRTUALENV_BACKGROUND='yellow'
-
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator context custom_python_version virtualenv_joined custom_conda_environment_joined dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time custom_wifi_signal ram disk_usage background_jobs)
-
-#POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
-
-POWERLEVEL9K_TIME_FORMAT="%D{\ue005 %H:%M}" #\uf073 %d/%m/%y}"
-POWERLEVEL9K_TIME_BACKGROUND='white'
-POWERLEVEL9K_RAM_BACKGROUND='yellow'
-POWERLEVEL9K_LOAD_CRITICAL_BACKGROUND="white"
-POWERLEVEL9K_LOAD_WARNING_BACKGROUND="white"
-POWERLEVEL9K_LOAD_NORMAL_BACKGROUND="white"
-POWERLEVEL9K_LOAD_CRITICAL_FOREGROUND="red"
-POWERLEVEL9K_LOAD_WARNING_FOREGROUND="yellow"
-POWERLEVEL9K_LOAD_NORMAL_FOREGROUND="black"
-POWERLEVEL9K_LOAD_CRITICAL_VISUAL_IDENTIFIER_COLOR="red"
-POWERLEVEL9K_LOAD_WARNING_VISUAL_IDENTIFIER_COLOR="yellow"
-POWERLEVEL9K_LOAD_NORMAL_VISUAL_IDENTIFIER_COLOR="green"
-POWERLEVEL9K_HOME_ICON=''
-POWERLEVEL9K_HOME_SUB_ICON=''
-POWERLEVEL9K_FOLDER_ICON=''
-POWERLEVEL9K_APPLE_ICON=''
-POWERLEVEL9K_DIR_SHOW_WRITABLE=true
-POWERLEVEL9K_STATUS_VERBOSE=true
-POWERLEVEL9K_STATUS_CROSS=true
