@@ -154,6 +154,7 @@ fi
 
 # Modify the agnoster Theme
 export VIRTUAL_ENV_DISABLE_PROMPT=1
+export PRIMARY_FG=black
 
 prompt_context() {}
 
