@@ -110,14 +110,15 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    brew
     colored-man-pages
     copydir
     copyfile
     dirpersist
-    ssh-agent
+    docker
     git
-    brew
     osx
+    ssh-agent
  )
 
 # Setup ssh-agent
