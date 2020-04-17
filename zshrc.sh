@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/sascha/.oh-my-zsh"
+export ZSH=~/.oh-my-zsh
 
 # My path extensions
 export PATH=$PATH:~/Library/Python/3.8/bin:/usr/local/opt/python@3.8/bin
