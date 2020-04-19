@@ -9,7 +9,7 @@
 	excludesfile = ~/.gitignore
 	editor = '/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code' --wait --new-window
     attributesfile = ~/.gitattributes
-	pager =
+
 [gerrit]
 	createchangeid = true
 [color]
