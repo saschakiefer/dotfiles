@@ -47,3 +47,5 @@
 	insteadOf = git://
 [push]
 	default = simple
+[pager]
+	branch = false
