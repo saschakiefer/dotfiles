@@ -120,12 +120,17 @@ plugins=(
     last-working-dir
     osx
     ssh-agent
+    zsh-autosuggestions
+    zsh-syntax-highlighting
  )
 
 # Setup ssh-agent
 zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa_sap
 
 source $ZSH/oh-my-zsh.sh
+
+# Auto Suggest Style
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#6f7070"
 
 # User configuration
 
