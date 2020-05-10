@@ -117,6 +117,7 @@ plugins=(
     dirpersist
     docker
     git
+    git-open
     last-working-dir
     osx
     ssh-agent
