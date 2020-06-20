@@ -5,7 +5,7 @@
 export ZSH=~/.oh-my-zsh
 
 # My path extensions
-export PATH=$PATH:~/Library/Python/3.8/bin:/usr/local/opt/python@3.8/bin
+export PATH=$PATH:~/Library/Python/3.8/bin:/usr/local/opt/python@3.8/bin:$HOME/.poetry/bin
 
 # Aliases
 alias mkdir="mkdir -vp"
