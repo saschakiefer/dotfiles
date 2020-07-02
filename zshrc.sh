@@ -118,6 +118,7 @@ plugins=(
     docker
     git
     git-open
+    kubectl
     last-working-dir
     osx
     ssh-agent
