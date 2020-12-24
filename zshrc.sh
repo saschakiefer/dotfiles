@@ -7,7 +7,7 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
 # My path extensions
-export PATH=~/Library/Python/3.8/bin:/usr/local/opt/python@3.8/bin:$PATH:$HOME/.poetry/bin
+export PATH=~/Library/Python/3.9/bin:/usr/local/opt/python@3.9/bin:$PATH:$HOME/.poetry/bin
 
 # Aliases
 alias mkdir="mkdir -vp"
@@ -126,6 +126,7 @@ plugins=(
     ssh-agent
     zsh-autosuggestions
     zsh-syntax-highlighting
+    genpass
  )
 
 # Setup ssh-agent
@@ -198,3 +199,17 @@ prompt_virtualenv() {
 
 . "/Users/d044813/.acme.sh/acme.sh.env"
 eval "$(pyenv init -)"
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/saschakiefer/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/saschakiefer/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/saschakiefer/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/saschakiefer/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<

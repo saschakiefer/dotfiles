@@ -7,5 +7,6 @@
         "latex",
         "markdown"
     ],
-    "python.jediEnabled": false
+    "python.jediEnabled": false,
+    "python.languageServer": "Microsoft"
 }

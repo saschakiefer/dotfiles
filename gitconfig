@@ -6,8 +6,8 @@
 [core]
 	autocrlf = input
 	filemode = false
-	excludesfile = /Users/d044813/.gitignore
-	editor = '/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code' --wait --new-window
+	excludesfile = ~/.gitignore
+	editor = 'subl' --wait
     attributesfile = ~/.gitattributes
 
 [gerrit]
