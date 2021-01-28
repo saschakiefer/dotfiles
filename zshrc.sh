@@ -3,6 +3,8 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 # My path extensions
 export PATH=~/Library/Python/3.8/bin:/usr/local/opt/python@3.8/bin:$PATH:$HOME/.poetry/bin
@@ -193,3 +195,4 @@ prompt_virtualenv() {
     print -Pn " ≡ ${output} "
   fi
 }
+. "/Users/d044813/.acme.sh/acme.sh.env"

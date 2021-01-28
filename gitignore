@@ -136,3 +136,10 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# hana-ml-client
+~/git/hana-ml-client/hanamlapi/.venv
+~/git/hana-ml-client/hanamlapi/.idea
+
+/Users/d044813/git/hana-ml-client/hanamlapi/.venv
+/Users/d044813/git/hana-ml-client/hanamlapi/.idea

@@ -4,9 +4,9 @@
 [github]
 	user = saschakiefer
 [core]
-	autocrlf = false
+	autocrlf = input
 	filemode = false
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/d044813/.gitignore
 	editor = '/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code' --wait --new-window
     attributesfile = ~/.gitattributes
 
