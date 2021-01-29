@@ -195,4 +195,6 @@ prompt_virtualenv() {
     print -Pn " ≡ ${output} "
   fi
 }
+
 . "/Users/d044813/.acme.sh/acme.sh.env"
+eval "$(pyenv init -)"
