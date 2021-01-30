@@ -197,19 +197,11 @@ prompt_virtualenv() {
   fi
 }
 
-. "/Users/d044813/.acme.sh/acme.sh.env"
-eval "$(pyenv init -)"
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/saschakiefer/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
+if [ -e ~/.isWorkMac ]
+then
+  . "/Users/d044813/.acme.sh/acme.sh.env"
 else
-    if [ -f "/Users/saschakiefer/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/saschakiefer/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/saschakiefer/opt/anaconda3/bin:$PATH"
-    fi
+  . "/Users/saschakiefer/.acme.sh/acme.sh.env"
 fi
-unset __conda_setup
-# <<< conda initialize <<<
+
+eval "$(pyenv init -)"
