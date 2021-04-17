@@ -205,3 +205,5 @@ else
 fi
 
 eval "$(pyenv init -)"
+
+export KUBECONFIG=$KUBECONFIG:$HOME/.kube/config:$HOME/.kube/configs/linode.yaml
