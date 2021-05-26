@@ -49,3 +49,5 @@
 	default = simple
 [pager]
 	branch = false
+[init]
+	defaultBranch = main
