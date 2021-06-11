@@ -229,4 +229,15 @@ eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
 export KUBECONFIG=$HOME/.kube/config
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
+# Java
+export JAVA_16_HOME=$(/usr/libexec/java_home -v16)
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
+
+alias java16='export JAVA_HOME=$JAVA_16_HOME'
+alias java11='export JAVA_HOME=$JAVA_11_HOME'
+
+# default to Java 11
+java11
+
+export PATH="$JAVA_HOME/bin:$PATH"
