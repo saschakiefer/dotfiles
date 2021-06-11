@@ -200,30 +200,33 @@ prompt_virtualenv() {
 if [ -e ~/.isWorkMac ]
 then
   . "/Users/d044813/.acme.sh/acme.sh.env"
+
+  # >>> conda initialize >>>
+  # !! Contents within this block are managed by 'conda init' !!
+  __conda_setup="$('/Users/d044813/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+  if [ $? -eq 0 ]; then
+      eval "$__conda_setup"
+  else
+      if [ -f "/Users/d044813/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+          . "/Users/d044813/opt/anaconda3/etc/profile.d/conda.sh"
+      else
+          export PATH="/Users/d044813/opt/anaconda3/bin:$PATH"
+      fi
+  fi
+  unset __conda_setup
+  # <<< conda initialize <<<
+
+  source /usr/local/share/chruby/chruby.sh
+  source /usr/local/share/chruby/auto.sh
+  chruby ruby-2.7.2
 else
   . "/Users/saschakiefer/.acme.sh/acme.sh.env"
 fi
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
 export KUBECONFIG=$HOME/.kube/config
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/d044813/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/d044813/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/d044813/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/d044813/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-chruby ruby-2.7.2
