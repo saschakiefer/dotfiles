@@ -200,6 +200,7 @@ prompt_virtualenv() {
 if [ -e ~/.isWorkMac ]
 then
   . "/Users/d044813/.acme.sh/acme.sh.env"
+  export PATH="$PATH:/Users/d044813/Applications/shell-tools"
 
   # >>> conda initialize >>>
   # !! Contents within this block are managed by 'conda init' !!
