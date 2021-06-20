@@ -244,5 +244,11 @@ export KUBECONFIG=$HOME/.kube/config
 # export PATH="$JAVA_HOME/bin:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/d044813/.sdkman"
-[[ -s "/Users/d044813/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/d044813/.sdkman/bin/sdkman-init.sh"
+if [ -e ~/.isWorkMac ]
+then
+  export SDKMAN_DIR="/Users/d044813/.sdkman"
+  [[ -s "/Users/d044813/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/d044813/.sdkman/bin/sdkman-init.sh"
+else
+  export SDKMAN_DIR="/Users/saschakiefer/.sdkman"
+  [[ -s "/Users/saschakiefer/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/saschakiefer/.sdkman/bin/sdkman-init.sh"
+fi
