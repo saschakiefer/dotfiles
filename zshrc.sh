@@ -25,6 +25,7 @@ alias rg="rg --colors 'match:style:nobold' --colors 'path:style:nobold'"
 alias be="noglob bundle exec"
 alias sha256="shasum -a 256"
 alias ...="cd .."
+alias lsd="lsd -al"
 
 export GREP_OPTIONS="--color=auto"
 
